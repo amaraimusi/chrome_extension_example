@@ -1,0 +1,19 @@
+{
+  "name": "pop_test",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "pop example",
+	"content_security_policy": "script-src 'self'; object-src 'self'",
+  "content_scripts": [{
+    "matches": ["http://localhost/sample/chrome_extension_example/pop_test/pop_test.html"],
+    "js": [
+      "jquery3.js",
+      "content.js"
+    ]
+  }],
+  
+  "browser_action": {
+    "default_title": "TEST2",
+    "default_popup": "pop2.html"
+  }
+}

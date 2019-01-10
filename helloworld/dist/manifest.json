@@ -1,0 +1,13 @@
+{
+  "name": "Sample",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Sample Chrome Extension",
+  "content_scripts": [{
+    "matches": ["http://localhost/sample/chrome_extension_example/helloworld/helloworld.html"],
+    "js": [
+      "jquery3.js",
+      "content.js"
+    ]
+  }]
+}
