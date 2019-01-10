@@ -21,7 +21,6 @@ chrome.runtime.sendMessage(
 
 // 受信側 other tab -> contents(popup/option -> contents)
 chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
-	console.log('test=受信');//■■■□□□■■■□□□■■■□□□)
     console.log(message);
     return;
 });

@@ -1,0 +1,19 @@
+{
+	"name": "tsv_input_support",
+	"version": "1.0.0",
+	"manifest_version": 2,
+	"description": "TSV入力支援ツール",
+	"content_security_policy": "script-src 'self'; object-src 'self'",
+	"content_scripts": [{
+		"matches": ["http://*/sample/chrome_extension_example/tsv_input_support/tsv_input_support.html"],
+		"js": [
+			"jquery3.js",
+			"content.js"
+		]
+	}],
+	
+	"browser_action": {
+		"default_title": "TSV入力支援ツール",
+		"default_popup": "popup/popup1.html"
+	}
+}
